@@ -1,0 +1,18 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+
+.footer p{
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: white;
+}
+
+.line{
+    height: 1px;
+    background-color: rgb(45, 45, 45);  
+    width: 100%;
+    margin: 40px auto;
+}

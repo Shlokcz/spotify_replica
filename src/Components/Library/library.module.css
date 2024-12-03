@@ -1,0 +1,323 @@
+.library {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(17, 17, 17);
+  height: calc(100% - (75px + 65px));
+  border-radius: 6px;
+  gap: 14px;
+  /* position: fixed; */
+  width: 100%;
+  margin-top: 65px;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.lib {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.libImg {
+  display: flex;
+  gap: 10px;
+}
+
+.libImg img {
+  height: 20px;
+  width: 20px;
+  margin-left: 18px;
+  cursor: pointer;
+}
+
+.plusImg {
+  margin-right: 18px;
+  margin-bottom: 2px;
+}
+
+.plusImg img {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+/* .plusImg img:hover{
+    padding: 10px;
+    background-color: grey;
+    border-radius: 50%
+} */
+
+.lib h3 {
+  font-size: 1rem;
+  color: rgb(166, 166, 166);
+}
+
+.card1 p,
+.card2 p {
+  color: white;
+  font-weight: 400;
+  font-size: 0.85rem;
+  margin-bottom: 14px;
+}
+
+.card1 button,
+.card2 button {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.card1,
+.card2,
+.legal {
+  width: 84%;
+  background-color: rgb(32, 32, 32);
+  margin: 0 auto;
+  border-radius: 8px;
+  height: 90px;
+  padding: 20px;
+}
+
+.card1 {
+  margin-bottom: 20px;
+}
+
+.legal {
+  display: flex;
+  background: none;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 50px;
+}
+
+.legal p {
+  color: white;
+  font-size: 0.7rem;
+}
+
+.card1 h4,
+.card2 h4 {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.language {
+  width: 84%;
+  margin: 0 auto;
+}
+
+.language button {
+  display: flex;
+  align-items: center;
+  padding: 6px 14px;
+  border: 0.5px solid white;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font: bold;
+  cursor: pointer;
+}
+
+.language button img {
+  height: 18px;
+  width: 18px;
+}
+
+.ifUserLoggedin {
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  /* margin: auto; */
+}
+
+.playlistandartist {
+  display: flex;
+  margin: 2px 4px;
+  gap: 8px;
+}
+
+.playlistandartist button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 24px;
+  color: white;
+  background-color: rgb(40, 40, 40);
+  font-size: 0.91rem;
+  font-weight: 500;
+}
+
+.searchandrecent {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 14px;
+}
+
+.searchandrecent img {
+  height: 15px;
+  width: 15px;
+}
+
+.searchandrecent h5 {
+  font-size: 0.85rem;
+  color: white;
+  font-weight: 400;
+}
+
+.songs {
+  display: flex;
+  flex-direction: column;
+  /* gap: 16px; */
+}
+
+.song {
+  display: flex;
+  align-items: center;
+  padding: 10px 6px;
+  border-radius: 6px;
+  gap: 12px;
+}
+
+.song:hover {
+  background-color: rgb(43, 43, 43);
+}
+
+.song img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.artistDetails p {
+  font-size: 1rem;
+  color: rgb(196, 196, 196);
+}
+
+.songPlayPause button {
+  position: absolute;
+  right: 20px;
+  padding: 4px 8px;
+  border: none;
+  color: white;
+  background-color: rgb(51, 51, 51);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+
+.playbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 97.5%; /* Takes full width across the viewport */
+    background-color: #333; /* Dark background for the playbar */
+    color: #fff; /* White text for visibility */
+    padding: 10px 20px; /* Spacing inside the playbar */
+    z-index: 1000; /* High z-index to ensure it overlays other components */
+    display: flex;
+    justify-content: space-between; /* Space between song info, controls, and progress bar */
+    align-items: center; /* Align items vertically */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+  }
+  
+  /* Song info section */
+  .songInfo {
+    display: flex;
+    align-items: center; /* Align the image and text vertically */
+    gap: 12px; /* Space between the image and text */
+  }
+  
+  .songInfo img {
+    width: 50px; /* Fixed size for the song thumbnail */
+    height: 50px;
+    border-radius: 6px; /* Rounded corners */
+  }
+  
+  .songInfo h3 {
+    font-size: 1rem; /* Song title font size */
+    margin: 0; /* Remove default margin */
+    color: #fff; /* White text for song title */
+  }
+  
+  .songInfo p {
+    font-size: 0.85rem; /* Smaller text for the artist name */
+    margin: 0; /* Remove default margin */
+    color: #aaa; /* Lighter gray for the artist name */
+  }
+  
+  /* Controls section */
+  .controls {
+    display: flex;
+    gap: 10px; /* Space between the control buttons */
+  }
+  
+  .controls button {
+    background-color: #555; /* Dark gray background for buttons */
+    color: #fff; /* White text for contrast */
+    border: none; /* Remove border */
+    padding: 8px 12px; /* Add spacing inside the button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+
+  .controls button img{
+    height: 20px;
+    width: 20px;
+  }
+  
+  .controls button:hover {
+    background-color: #777; /* Lighter gray on hover */
+  }
+  
+  /* Progress bar section */
+  .progressBar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between time labels and range input */
+    width: 40%; /* Adjust width as needed for responsiveness */
+  }
+  
+  .progressBar span {
+    font-size: 0.85rem; /* Smaller text for time labels */
+    color: #fff; /* White text for visibility */
+  }
+  
+  .progressBar input[type="range"] {
+    width: 100%; /* Take up remaining space */
+    height: 4px; /* Thin progress bar */
+    background-color: #555; /* Track background */
+    border-radius: 2px; /* Rounded corners for the track */
+    cursor: pointer; /* Pointer cursor on hover */
+    appearance: none; /* Remove default browser styling */
+  }
+  
+  .progressBar input[type="range"]::-webkit-slider-thumb {
+    appearance: none; /* Remove default thumb styling */
+    width: 12px; /* Size of the thumb */
+    height: 12px;
+    background-color: #fff; /* White thumb for contrast */
+    border-radius: 50%; /* Circular thumb */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .progressBar input[type="range"]::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .progressBar input[type="range"]::-ms-thumb {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  

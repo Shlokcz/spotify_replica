@@ -1,0 +1,169 @@
+.navbar {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo img {
+  height: 32px;
+  width: 32px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.homeandsearch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 500px;
+  margin-left: 110px;
+}
+
+.homeandsearch img {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.searchbar {
+  display: flex;
+  background-color: rgb(36, 36, 36);
+  border-radius: 34px;
+  padding: 11px 32px;
+  padding-right: 20px;
+  gap: 14px;
+  width: 100%;
+}
+
+.searchbar img {
+  height: 25px;
+  width: 25px;
+}
+
+.homeImg {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: rgb(36, 36, 36);
+  height: 27px;
+}
+
+.homeImg:hover {
+  background-color: rgb(44, 44, 44);
+  border: 0.5px solid rgb(74, 74, 74);
+  transition: 0.2s ease-in-out;
+}
+
+.homeImg img {
+  height: 25px;
+  width: 25px;
+  margin-bottom: 4px;
+}
+
+.searchbar input {
+  border: none;
+  background: none;
+  width: 100%;
+  font-size: 1.1rem;
+  color: rgb(196, 196, 196);
+}
+
+.searchbar:hover {
+  background-color: rgb(44, 44, 44);
+  border: 0.5px solid rgb(74, 74, 74);
+  transition: 0.2s ease-in-out;
+}
+
+.searchbar input::placeholder {
+  color: rgb(196, 196, 196);
+}
+
+.searchbar input:focus {
+  border: none;
+  outline: none;
+}
+
+.logo img {
+  margin-left: 30px;
+}
+
+.login {
+  font-size: 1.02rem;
+  font-weight: bold;
+  padding: 14px 32px;
+  border-radius: 34px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.login:hover {
+  padding: 15px 32px;
+  font-size: 1.03rem;
+}
+
+.btn {
+  display: flex;
+  gap: 30px;
+}
+
+.signup {
+  border: none;
+  background: none;
+  color: rgb(166, 166, 166);
+  font-weight: bold;
+  font-size: 1.04rem;
+  cursor: pointer;
+}
+
+.signup:hover {
+  color: white;
+}
+
+.blurBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  display: none;
+}
+
+.blurBackground.active {
+    display: block;
+}
+
+.userCard {
+    position: absolute;
+    top: 50px;
+    right: 74%;
+    width: 300px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1001;
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .userCard.active {
+    display: block;
+  }
+  
+  .userCardHeader {
+    padding: 1rem;
+    background: #36e273;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .userCardBody {
+    padding: 1rem;
+  }

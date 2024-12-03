@@ -1,0 +1,23 @@
+.home{
+    /* display: flex; */
+    background-color: black;
+}
+
+.content{
+    display: flex;
+    gap: 10px;
+}
+
+.col1{
+    height: 100vh;
+    background-color: black;
+    flex: 0.24;
+    margin-left: 7px;
+}
+
+.col2{
+    height: 100vh;
+    background-color: black;
+    flex: 0.80;
+    margin-right: 7px;
+}

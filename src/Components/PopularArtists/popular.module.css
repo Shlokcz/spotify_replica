@@ -1,0 +1,144 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(17, 17, 17);
+  height: calc(100% - (90px + 90px));
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 65px;
+  z-index: 1;
+  width: 98%;
+  /* position: fixed; */
+  overflow-y: auto;
+}
+
+.popular h1 {
+  color: white;
+  font-size: 1.9rem;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+
+.card {
+  padding: 12px;
+  height: 280px;
+}
+
+.card:hover {
+  background-color: rgb(26, 26, 26);
+  border-radius: 8px;
+}
+
+.card img {
+  height: 185px;
+  width: 185px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 1px 1px 25px 3px black;
+}
+
+.card h6 {
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(195, 195, 195);
+}
+
+.about {
+  display: flex;
+  color: white;
+  gap: 115px;
+  margin-top: 40px;
+}
+
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about h6 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.about p {
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.about p:hover {
+  text-decoration: underline;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icons div {
+  height: 40px;
+  background-color: rgb(45, 45, 45);
+  border-radius: 50%;
+  width: 40px;
+}
+
+.icons img {
+  padding-left: 10px;
+  margin-top: 10px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.playButton {
+  position: relative;
+  /* top: 52%; */
+  transform: translateY(-50%);
+  display: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  border-radius: 50%;
+  /* cursor: pointer; */
+  z-index: 1;
+  margin-left: 100px;
+}
+
+/* .card:hover .playButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.playButton button {
+  background: transparent;
+  border: none;
+  color: black;
+  /* font-size: 16px; */
+  cursor: pointer;
+  background-color: #36e273;
+  border-radius: 50%;
+  padding: 14px;
+  /* margin-left: 100px; */
+}
+
+.playButton img {
+  height: 20px;
+  width: 20px;
+}
